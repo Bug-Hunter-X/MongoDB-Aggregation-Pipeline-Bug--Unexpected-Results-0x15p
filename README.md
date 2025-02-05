@@ -1,0 +1,5 @@
+# MongoDB Aggregation Pipeline Bug: Unexpected Results
+
+This repository demonstrates a bug related to an aggregation pipeline in MongoDB. The pipeline attempts to perform a lookup, unwind, and group operation, but produces unexpected results due to an error in the grouping or data projection stages. 
+
+The `bug.js` file contains the erroneous code, while `bugSolution.js` offers a corrected version.  The issue stems from an incorrect grouping or data projection that leads to inaccurate aggregations. The solution involves carefully reviewing the stages of the pipeline, ensuring that the projection, grouping, and summation stages work correctly together to produce the desired outcome.  This might involve adjusting the fields used in the `$group` stage or adjusting the `$match` and `$lookup` stages to ensure correct data is processed.
